@@ -11,77 +11,77 @@
 </head>
 
 <body>
-    <header class="page-header"></header>
-    <img src="css/img/header/logo.svg">
-    <nav class="page-header__navigation">
-        <li><a href="#" class="page-header__navigation-item">Мебель</a></li>
-        <li><a href="#" class="page-header__navigation-item">Освещение</a></li>
-        <li><a href="#" class="page-header__navigation-item">Текстиль</a></li>
-    </nav>
-    <ul class="page-header__user">
-        <li class="page-header__user-item"><img src="css/img/header/poisk.svg"></li>
-        <li class="page-header__user-item"><img src="css/img/header/cart.svg"></li>
-    </ul>
+    <header class="page-header">
+        <div class="page-header__logo"><img src="css/img/header/logo.svg"></div>
+        <nav class="page-header__navigation">
+            <li><a href="#" class="page-header__navigation-item">Мебель</a></li>
+            <li><a href="#" class="page-header__navigation-item">Освещение</a></li>
+            <li><a href="#" class="page-header__navigation-item">Текстиль</a></li>
+        </nav>
+        <ul class="page-header__user">
+            <li class="page-header__user-item"><a href="#" aria-label="Поиск по сайту"><img
+                        src="css/img/header/poisk.svg"></a></li>
+            <li class="page-header__user-item"><a href="#" aria-label="Корзина"><img src="css/img/header/cart.svg"></a>
+            </li>
+        </ul>
+    </header>
     <main class="page-main">
-        <section class="main">
+        <section class="container main">
             <div class="slider">
                 <div class="slider__product">
                     <div class="slider__product">
-                        <h2>Дизайнерская мебель</h2>
-                        <h3>Кресло "Антиква"</h3>
-                        <p>
-                            $380
-                            <span>$240</span>
-                        </p>
-                        <button class="product__button" type="button">Купить</button>
-                        <div class="product__image"><img src="#">
+                        <h2 class="slider__product-title">Дизайнерская мебель</h2>
+                        <h3 class="slider__product-name">Кресло "Антиква"</h3>
+                        <span class="slider__product-price-old">$380</span>
+                        <span class="slider__product-price-new">$240</span>
+                        <button class="slider__product-button" type="button">Купить</button>
+                        <div class="slider__product-image"><img src="css/img/main/main-armchair.png" width="532px"
+                                height="751px" alt="Кресло «Антиква»">
                         </div>
                     </div>
-                    <div class="slider__product">
-                        <h2>Дизайнерская мебель</h2>
-                        <h3>Кресло "Антиква"</h3>
-                        <p>
-                            $380
-                            <span>$240</span>
-                        </p>
-                        <button class="product__button" type="button">Купить</button>
-                        <div class="product__image"><img src="#">
+                    <div class="slider__product none">
+                        <h2 class="slider__product-title">Дизайнерская мебель</h2>
+                        <h3 class="slider__product-name">Кресло "Антиква"</h3>
+                        <span class="slider__product-price-old">$380</span>
+                        <span class="slider__product-price-new">$240</span>
+                        <button class="slider__product-button" type="button">Купить</button>
+                        <div class="slider__product-image"><img src="css/img/main/main-armchair.png" width="532px"
+                                height="751px" alt="Кресло «Антиква»">
                         </div>
                     </div>
-                    <div class="slider__product">
-                        <h2>Дизайнерская мебель</h2>
-                        <h3>Кресло "Антиква"</h3>
-                        <p>
-                            $380
-                            <span>$240</span>
-                        </p>
-                        <button class="product__button" type="button">Купить</button>
-                        <div class="product__image"><img src="#">
+                    <div class="slider__product none">
+                        <h2 class="slider__product-title">Дизайнерская мебель</h2>
+                        <h3 class="slider__product-name">Кресло "Антиква"</h3>
+                        <span class="slider__product-price-old">$380</span>
+                        <span class="slider__product-price-new">$240</span>
+                        <button class="slider__product-button" type="button">Купить</button>
+                        <div class="slider__product-image"><img src="css/img/main/main-armchair.png" width="532px"
+                                height="751px" alt="Кресло «Антиква»">
                         </div>
                     </div>
-                    <div class="slider__product">
-                        <h2>Дизайнерская мебель</h2>
-                        <h3>Кресло "Антиква"</h3>
-                        <p>
-                            $380
-                            <span>$240</span>
-                        </p>
-                        <button class="product__button" type="button">Купить</button>
-                        <div class="product__image"><img src="#">
+                    <div class="slider__product none">
+                        <h2 class="slider__product-title">Дизайнерская мебель</h2>
+                        <h3 class="slider__product-name">Кресло "Антиква"</h3>
+                        <span class="slider__product-price-old">$380</span>
+                        <span class="slider__product-price-new">$240</span>
+                        <button class="slider__product-button" type="button">Купить</button>
+                        <div class="slider__product-image"><img src="css/img/main/main-armchair.png" width="532px"
+                                height="751px" alt="Кресло «Антиква»">
                         </div>
                     </div>
+                    <div class="swiper-scrollbar main__slider-scrollbar"></div>
+                    <div class="swiper-pagination main__slider-pagination"></div>
                 </div>
-
         </section>
-        <section class="new">
+<section class="container new">
             <div class="new__title">
                 <h2>Новинки</h2>
             </div>
             <div class="new__item new__item-twilight">
                 <a href="#">
                     <div class="product__content">
-                        <img src="#">
-                        <h3>Стул "Смеркается"</h3>
+                        <img src="css/img/main/twilight.png" width="175px" height="169px" alt="Стул «Смеркается»">
+                        <h3>Стул «Смеркается»</h3>
                         <p>$280</p>
                     </div>
                 </a>
@@ -90,8 +90,8 @@
             <div class="new__item new__item-cloud">
                 <a href="#">
                     <div class="product__content">
-                        <img src="#">
-                        <h3>Люстра "Облако"</h3>
+                        <img src="css/img/main/cloud.png" width="202px" height="226px" alt="Люстра «Облако»">
+                        <h3>Люстра «Облако»</h3>
                         <p>$250</p>
                     </div>
                 </a>
@@ -99,8 +99,8 @@
             <div class="new__item new__item-cream">
                 <a href="#">
                     <div class="product__content">
-                        <img src="#">
-                        <h3>Стол "Крем-брюле"</h3>
+                        <img src="css/img/main/cream.png" width="270px" height="198px" alt="Стол «Крем-брюле»">
+                        <h3>Стол «Крем-брюле»</h3>
                         <p>$320</p>
                     </div>
                 </a>
@@ -108,75 +108,96 @@
             <div class="new__item new__item-choco">
                 <a href="#">
                     <div class="product__content">
-                        <img src="#">
-                        <h3>Стул офисный "Белый шоколад"</h3>
+                        <img src="css/img/main/choco.png" width="490px" height="466px"
+                            alt="Стул офисный «Белый шоколад»">
+                        <h3>Стул офисный «Белый шоколад»</h3>
                         <p>$120</p>
                     </div>
                 </a>
             </div>
 
         </section>
-        <section class="feedback">
-<div class="feedback-slider">
-    <div class="feedback-slider__review"><img src="#" alt="avatar" width="80px" height="80px">
-    <span class="feedback-slider__name">Елена Новикова</span>
-    <span class="feedback-slider__status">Студентка</span>
-    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</blockquote>
-</div>
-<div class="feedback-slider__review"><img src="#" alt="avatar" width="80px" height="80px">
-    <span class="feedback-slider__name">Елена Новикова</span>
-    <span class="feedback-slider__status">Студентка</span>
-    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</blockquote>
-</div>
-<div class="feedback-slider__review"><img src="#" alt="avatar" width="80px" height="80px">
-    <span class="feedback-slider__name">Елена Новикова</span>
-    <span class="feedback-slider__status">Студентка</span>
-    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</blockquote>
-</div>
-<div class="feedback-slider__review"><img src="#" alt="avatar" width="80px" height="80px">
-    <span class="feedback-slider__name">Елена Новикова</span>
-    <span class="feedback-slider__status">Студентка</span>
-    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</blockquote>
-</div>
-</div>
+<!--         <section class="container feedback">
+            <div class="feedback-slider">
+                <div class="feedback-slider__review"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
+                        height="80px">
+                    <span class="feedback-slider__name">Елена Новикова</span>
+                    <span class="feedback-slider__status">Студентка</span>
+                    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в
+                        конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </blockquote>
+                </div>
+                <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
+                        height="80px">
+                    <span class="feedback-slider__name">Елена Новикова</span>
+                    <span class="feedback-slider__status">Студентка</span>
+                    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в
+                        конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </blockquote>
+                </div>
+                <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
+                        height="80px">
+                    <span class="feedback-slider__name">Елена Новикова</span>
+                    <span class="feedback-slider__status">Студентка</span>
+                    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в
+                        конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </blockquote>
+                </div>
+                <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
+                        height="80px">
+                    <span class="feedback-slider__name">Елена Новикова</span>
+                    <span class="feedback-slider__status">Студентка</span>
+                    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в
+                        конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                    </blockquote>
+                </div>
+                                              <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination review__slider-pagination"></div>
+            </div>
 
-        </section>
-        <section class="sale">
-            <h2>Последний шанс</h2>
+        </section> -->
+        <section class="container sale">
+            <h2 class="sale__title">Последний шанс</h2>
             <ul class="sale__tab">
                 <li class="sale__tab-items"><a href="#" class="sale__tab-link">Стулья</a></li>
                 <li class="sale__tab-items"><a href="#" class="sale__tab-link">Диваны</a></li>
                 <li class="sale__tab-items"><a href="#" class="sale__tab-link">Кресла</a></li>
             </ul>
-            <div class="container">
+            <div class="container sale-wrapper">
                 <div class="container__product">
-                    <h3>Стул "Карамель"</h3>
+                    <h3 class="container__product-title">Стул «Карамель»</h3>
                     <span class="container__product-new">$195</span>
                     <span class="container__product-old">$245</span>
+                    <img src="css/img/main/caramel.png" width="209px" height="252px" alt="Стул «Карамель»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
-                    <h3>Стул "Облако"</h3>
+                    <h3 class="container__product-title">Стул «Облако»</h3>
                     <span class="container__product-new">$200</span>
                     <span class="container__product-old">$250</span>
+                    <img src="css/img/main/cloud-chair.png" width="197px" height="255px" alt="Стул «Облако»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
-                    <h3>Стул "Сова"</h3>
+                    <h3 class="container__product-title">Стул «Сова»</h3>
                     <span class="container__product-new">$240</span>
                     <span class="container__product-old">$260</span>
+                    <img src="css/img/main/owl.png" width="167px" height="246px" alt="Стул «Сова»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
-                    <h3>Стул "Май"</h3>
+                    <h3 class="container__product-title">Стул «Май»</h3>
                     <span class="container__product-new">$280</span>
                     <span class="container__product-old">$330</span>
+                    <img src="css/img/main/may.png" width="186px" height="285px" alt="Стул «Май»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
-                    <h3>Стул "Месси"</h3>
+                    <h3 class="container__product-title">Стул «Месси»</h3>
                     <span class="container__product-new">$280</span>
                     <span class="container__product-old">$305</span>
+                    <img src="css/img/main/messi.png" width="162px" height="249px" alt="Стул «Месси»">
                     <button class="container__product-buy">Купить</button>
                 </div>
             </div>
@@ -185,24 +206,29 @@
     </main>
 
     <footer class="page-footer">
-        <div class="page-footer__contact">
-            <img src="css/img/footer icons/shop.svg">
-            <p> <img src="css/img/footer icons/phone.svg">+7(495) 205-28-14
-                <img src="css/img/footer icons/post.svg">callium@gmail.com
+        <div class="page-footer__wrapper container">
+            <div class="page-footer__logo">
+                <img src="css/img/footer icons/shop.svg">
+            </div>
+            <div class="page-footer__navigation">
+                <ul class="page-footer__navigation-list">
+                    <li><a href="#" class="page-footer__navigation-item">Доставка</a></li>
+                    <li><a href="#" class="page-footer__navigation-item">Оплата</a></li>
+                    <li><a href="#" class="page-footer__navigation-item">Контакты</a></li>
+                    <li><a href="#" class="page-footer__navigation-item">Гарантии</a></li>
+                </ul>
+            </div>
+            <div class="page-footer__contacts">
+                <span class="page-footer__contacts-phone"><img src="css/img/footer icons/phone.svg">+7(495)
+                    205-28-14</span>
+                <span class="page-footer__contacts-post"><img
+                        src="css/img/footer icons/post.svg">callium@gmail.com</span>
+            </div>
+            <div class="page-footer__border"></div>
+            <p class="page-footer__copyright">© 2022 «Callium» — Сайт по продаже дизайнерской мебели. Все
+                права защищены.
             </p>
         </div>
-        <div class="page-footer__navigation">
-            <ul>
-                <li><a href="#" class="page-footer__navigation-item">Доставка</a></li>
-                <li><a href="#" class="page-footer__navigation-item">Оплата</a></li>
-                <li><a href="#" class="page-footer__navigation-item">Контакты</a></li>
-                <li><a href="#" class="page-footer__navigation-item">Гарантии</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="page-footer__copyright">© 2022 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.
-        </div>
-        <div>
     </footer>
 
 </body>

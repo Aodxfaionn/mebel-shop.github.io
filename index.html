@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Callium - продажа дизайнерской мебели">
     <title>Дизайнерская мебель "Callium"</title>
+    <link rel="preload" href="fonts/open-sans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/playfair-display.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/playfair-display-bold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,6 +21,7 @@
             <li><a href="#" class="page-header__navigation-item">Освещение</a></li>
             <li><a href="#" class="page-header__navigation-item">Текстиль</a></li>
         </nav>
+        <button class="site-nav__button" type="button" aria-label="Показать/Скрыть меню"></button>
         <ul class="page-header__user">
             <li class="page-header__user-item"><a href="#" aria-label="Поиск по сайту"><img
                         src="css/img/header/poisk.svg"></a></li>
@@ -73,14 +77,15 @@
                     <div class="swiper-pagination main__slider-pagination"></div>
                 </div>
         </section>
-<section class="container new">
+        <section class="container new">
             <div class="new__title">
                 <h2>Новинки</h2>
             </div>
             <div class="new__item new__item-twilight">
                 <a href="#">
                     <div class="product__content">
-                        <img src="css/img/main/twilight.png" width="175px" height="169px" alt="Стул «Смеркается»">
+                        <img src="css/img/main/chair-twilight-desktop.jpg" width="175px" height="169px"
+                            alt="Стул «Смеркается»">
                         <h3>Стул «Смеркается»</h3>
                         <p>$280</p>
                     </div>
@@ -90,7 +95,8 @@
             <div class="new__item new__item-cloud">
                 <a href="#">
                     <div class="product__content">
-                        <img src="css/img/main/cloud.png" width="202px" height="226px" alt="Люстра «Облако»">
+                        <img src="css/img/main/chandelier-desktop.jpg" width="202px" height="226px"
+                            alt="Люстра «Облако»">
                         <h3>Люстра «Облако»</h3>
                         <p>$250</p>
                     </div>
@@ -99,7 +105,8 @@
             <div class="new__item new__item-cream">
                 <a href="#">
                     <div class="product__content">
-                        <img src="css/img/main/cream.png" width="270px" height="198px" alt="Стол «Крем-брюле»">
+                        <img src="css/img/main/table-cream-desktop.png" width="270px" height="198px"
+                            alt="Стол «Крем-брюле»">
                         <h3>Стол «Крем-брюле»</h3>
                         <p>$320</p>
                     </div>
@@ -108,7 +115,7 @@
             <div class="new__item new__item-choco">
                 <a href="#">
                     <div class="product__content">
-                        <img src="css/img/main/choco.png" width="490px" height="466px"
+                        <img src="css/img/main/chair-white-desktop.jpg" width="490px" height="466px"
                             alt="Стул офисный «Белый шоколад»">
                         <h3>Стул офисный «Белый шоколад»</h3>
                         <p>$120</p>
@@ -117,14 +124,15 @@
             </div>
 
         </section>
-<!--         <section class="container feedback">
+        <section class="container feedback">
             <div class="feedback-slider">
                 <div class="feedback-slider__review"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
-                        height="80px">
-                    <span class="feedback-slider__name">Елена Новикова</span>
-                    <span class="feedback-slider__status">Студентка</span>
-                    <blockquote>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в
-                        конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+                        height="80px" class="feedback-slider__avatar">
+                    <span class="feedback-slider__name"><b>Елена Новикова</b>
+                        Студентка</span>
+                    <blockquote class="feedback-slider__blockquote">«Хочу поделиться своими впечатлениями по
+                        использованию дивана «Бродвей», заказывала в
+                        конце 2021 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
                     </blockquote>
                 </div>
                 <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
@@ -151,12 +159,12 @@
                         конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
                     </blockquote>
                 </div>
-                                              <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination review__slider-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination review__slider-pagination"></div>
             </div>
 
-        </section> -->
+        </section>
         <section class="container sale">
             <h2 class="sale__title">Последний шанс</h2>
             <ul class="sale__tab">
@@ -169,35 +177,36 @@
                     <h3 class="container__product-title">Стул «Карамель»</h3>
                     <span class="container__product-new">$195</span>
                     <span class="container__product-old">$245</span>
-                    <img src="css/img/main/caramel.png" width="209px" height="252px" alt="Стул «Карамель»">
+                    <img src="css/img/main/chair-caramel-desktop.png" width="209px" height="252px"
+                        alt="Стул «Карамель»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Облако»</h3>
                     <span class="container__product-new">$200</span>
                     <span class="container__product-old">$250</span>
-                    <img src="css/img/main/cloud-chair.png" width="197px" height="255px" alt="Стул «Облако»">
+                    <img src="css/img/main/chair-cloud-desktop.jpg" width="197px" height="255px" alt="Стул «Облако»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Сова»</h3>
                     <span class="container__product-new">$240</span>
                     <span class="container__product-old">$260</span>
-                    <img src="css/img/main/owl.png" width="167px" height="246px" alt="Стул «Сова»">
+                    <img src="css/img/main/chair-owl-desktop.png" width="167px" height="246px" alt="Стул «Сова»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Май»</h3>
                     <span class="container__product-new">$280</span>
                     <span class="container__product-old">$330</span>
-                    <img src="css/img/main/may.png" width="186px" height="285px" alt="Стул «Май»">
+                    <img src="css/img/main/chair-maya-desktop.jpg" width="186px" height="285px" alt="Стул «Май»">
                     <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Месси»</h3>
                     <span class="container__product-new">$280</span>
                     <span class="container__product-old">$305</span>
-                    <img src="css/img/main/messi.png" width="162px" height="249px" alt="Стул «Месси»">
+                    <img src="css/img/main/chair-messi-desktop.png" width="162px" height="249px" alt="Стул «Месси»">
                     <button class="container__product-buy">Купить</button>
                 </div>
             </div>
@@ -207,29 +216,24 @@
 
     <footer class="page-footer">
         <div class="page-footer__wrapper container">
-            <div class="page-footer__logo">
-                <img src="css/img/footer icons/shop.svg">
-            </div>
-            <div class="page-footer__navigation">
-                <ul class="page-footer__navigation-list">
-                    <li><a href="#" class="page-footer__navigation-item">Доставка</a></li>
-                    <li><a href="#" class="page-footer__navigation-item">Оплата</a></li>
-                    <li><a href="#" class="page-footer__navigation-item">Контакты</a></li>
-                    <li><a href="#" class="page-footer__navigation-item">Гарантии</a></li>
-                </ul>
-            </div>
-            <div class="page-footer__contacts">
-                <span class="page-footer__contacts-phone"><img src="css/img/footer icons/phone.svg">+7(495)
-                    205-28-14</span>
-                <span class="page-footer__contacts-post"><img
-                        src="css/img/footer icons/post.svg">callium@gmail.com</span>
-            </div>
-            <div class="page-footer__border"></div>
-            <p class="page-footer__copyright">© 2022 «Callium» — Сайт по продаже дизайнерской мебели. Все
-                права защищены.
-            </p>
+          <div class="page-footer__logo">
+            <img src="css/img/footer icons/shop.svg" width="20" height="20" alt="Логотип Callium">
+          </div>
+          <nav class="page-footer__navigation">
+            <ul class="page-footer__navigation-list">
+              <li class="page-footer__navigation-item"><a href="#">Доставка</a></li>
+              <li class="page-footer__navigation-item"><a href="#">Оплата</a></li>
+              <li class="page-footer__navigation-item"><a href="#">Контакты</a></li>
+              <li class="page-footer__navigation-item"><a href="#">Гарантии</a></li>
+            </ul>
+          </nav>
+          <div class="page-footer__contacts">
+            <a class="page-footer__tel" href="tel:+74952052814"><img src="css/img/footer icons/phone.svg">+7(495) 205-28-14</a>
+            <a class="page-footer__mail" href="mailto:callium@gmail.com"><img src="css/img/footer icons/post.svg">callium@gmail.com</a>
+          </div>
+          <p class="page-footer__copyright">© 2022 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
         </div>
-    </footer>
+      </footer>
 
 </body>
 

@@ -9,7 +9,6 @@
     <link rel="preload" href="fonts/open-sans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/playfair-display.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/playfair-display-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,7 +20,7 @@
             <li><a href="#" class="page-header__navigation-item">Освещение</a></li>
             <li><a href="#" class="page-header__navigation-item">Текстиль</a></li>
         </nav>
-        <button class="site-nav__button" type="button" aria-label="Показать/Скрыть меню"></button>
+        <button class="site-nav__button none" type="button" aria-label="Показать/Скрыть меню"></button>
         <ul class="page-header__user">
             <li class="page-header__user-item"><a href="#" aria-label="Поиск по сайту"><img
                         src="css/img/header/poisk.svg"></a></li>
@@ -126,7 +125,7 @@
         </section>
         <section class="container feedback">
             <div class="feedback-slider">
-                <div class="feedback-slider__button-next"></div>
+                <div class="feedback-slider__button feedback-slider__button-next"></div>
                 <div class="feedback-slider__container">
                     <div class="feedback-slider__review"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
                             height="80px" class="feedback-slider__avatar">
@@ -173,20 +172,19 @@
                         </blockquote>
                     </div>
                 </div>
-                <div class="feedback-slider__button-prev"></div>
+                <div class="feedback-slider__button feedback-slider__button-prev"></div>
                 <div class="slider-pagination review__slider-pagination"></div>
             </div>
         </section>
         <section class="container sale">
-
             <h2 class="sale__title">Последний шанс<div></div>
             </h2>
             <ul class="sale__tab">
-                <li class="sale__tab-items"><a href="#" class="sale__tab-link">Стулья</a></li>
+                <li class="sale__tab-items"><a href="#" class="sale__tab-link sale__tab-open">Стулья</a></li>
                 <li class="sale__tab-items"><a href="#" class="sale__tab-link">Диваны</a></li>
                 <li class="sale__tab-items"><a href="#" class="sale__tab-link">Кресла</a></li>
             </ul>
-            <div class="container sale-wrapper">
+            <div class="container sale-wrapper chair">
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Карамель»</h3>
                     <div><span class="container__product-new">$195</span>
@@ -194,7 +192,7 @@
                     </div>
                     <img src="css/img/main/chair-caramel-desktop.png" width="209px" height="252px"
                         alt="Стул «Карамель»">
-                    <button class="container__product-buy none">Купить</button>
+                    <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Облако»</h3>
@@ -202,7 +200,7 @@
                         <span class="container__product-old">$250</span>
                     </div>
                     <img src="css/img/main/chair-cloud-desktop.jpg" width="197px" height="255px" alt="Стул «Облако»">
-                    <button class="container__product-buy none">Купить</button>
+                    <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Сова»</h3>
@@ -210,7 +208,7 @@
                         <span class="container__product-old">$260</span>
                     </div>
                     <img src="css/img/main/chair-owl-desktop.png" width="167px" height="246px" alt="Стул «Сова»">
-                    <button class="container__product-buy none">Купить</button>
+                    <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Май»</h3>
@@ -218,7 +216,7 @@
                         <span class="container__product-old">$330</span>
                     </div>
                     <img src="css/img/main/chair-maya-desktop.jpg" width="186px" height="255px" alt="Стул «Май»">
-                    <button class="container__product-buy none">Купить</button>
+                    <button class="container__product-buy">Купить</button>
                 </div>
                 <div class="container__product">
                     <h3 class="container__product-title">Стул «Месси»</h3>
@@ -226,10 +224,11 @@
                         <span class="container__product-old">$305</span>
                     </div>
                     <img src="css/img/main/chair-messi-desktop.png" width="162px" height="249px" alt="Стул «Месси»">
-                    <button class="container__product-buy none">Купить</button>
+                    <button class="container__product-buy">Купить</button>
                 </div>
             </div>
-
+            <div class="container sale-wrapper sofa">Диваны</div>
+            <div class="container sale-wrapper armchair">Кресла</div>
         </section>
     </main>
 
@@ -256,7 +255,8 @@
                 защищены.</p>
         </div>
     </footer>
-
+    <script src="/js/feedback.js"></script>
+    <script src="/js/last-chance.js"></script>
 </body>
 
 </html>

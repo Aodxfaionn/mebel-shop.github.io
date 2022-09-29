@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("font/open-sans.woff2") format("woff2"),
-    url("font/open-sans.woff") format("woff");
+  src: url("../css/font/open-sans.woff2") format("woff2"),
+    url("../css/font/open-sans.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("font/roboto.woff2") format("woff2"),
-    url("font/roboto.woff") format("woff");
+  src: url("../css/font/roboto.woff2") format("woff2"),
+    url("../css/font/roboto.woff") format("woff");
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("font/playfair-display.woff2") format("woff2"),
-    url("font/playfair-display.woff") format("woff");
+  src: url("../css/font/playfair-display.woff2") format("woff2"),
+    url("../css/font/playfair-display.woff") format("woff");
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("font/playfair-display-bold.woff2") format("woff2"),
-    url("font/playfair-display-bold.woff") format("woff");
+  src: url("../css/font/playfair-display-bold.woff2") format("woff2"),
+    url("../css/font/playfair-display-bold.woff") format("woff");
 }
 
 .container,
@@ -58,6 +58,10 @@ a {
 
 .none {
   display: none;
+}
+
+.is-active {
+  display: block;
 }
 
 .page-header {
@@ -183,6 +187,27 @@ a {
   top: 0px;
 }
 
+.slider__switch {
+  position: absolute;
+width: 61px;
+height: 205px;
+left: 1245px;
+top: 311px;
+opacity: 0.4;
+font-size: 14px;
+}
+
+.slider__switch:hover {
+cursor: pointer;
+}
+
+.slider__switch-open {
+  text-decoration-line: underline;
+color: #000000;
+opacity: 1;
+font-size: 18px;
+}
+
 .new {
   display: grid;
   grid-template-areas:
@@ -305,6 +330,10 @@ a {
   position: absolute;
   left: 308px;
   background-image: url("img/main/arrow-left.svg");
+}
+
+.feedback-slider__button:hover {
+  box-shadow: 1px 1px 10px 5px rgba(8, 0, 0, 0.1);
 }
 
 .feedback-slider__container {

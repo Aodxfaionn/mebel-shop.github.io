@@ -1,11 +1,10 @@
-let saleTab = document.querySelectorAll(".sale__tab-items");
+/* let saleTab = document.querySelectorAll(".sale__tab-items");
 
 for (let tab of saleTab) {
   tab.addEventListener("mouseover", function () {
     tab.classList.toggle("sale__tab-open");
   });
 }
-
 
 let lastProduct = document.querySelectorAll(".container__product");
 
@@ -17,3 +16,4 @@ for (let last of lastProduct) {
     last.classList.remove("border");
   });
 }
+ */

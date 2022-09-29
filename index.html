@@ -32,7 +32,7 @@
         <section class="container main">
             <div class="slider">
                 <div class="slider__product-all">
-                    <div class="slider__product">
+                    <div class="slider__product none is-active">
                         <h2 class="slider__product-title">Дизайнерская мебель</h2>
                         <h3 class="slider__product-name">Кресло "Антиква"</h3>
                         <span class="slider__product-price-old">$380</span>
@@ -72,8 +72,19 @@
                                 height="751px" alt="Кресло «Антиква»">
                         </div>
                     </div>
-                    <div class="swiper-scrollbar main__slider-scrollbar"></div>
-                    <div class="swiper-pagination main__slider-pagination"></div>
+                </div>
+                <div class="slider__switch">
+                    <p class="slider__switch-open switch">01</p>
+                    <p class="switch">
+                        02
+                    </p>
+                    <p class="switch">
+                        03
+                    </p>
+                    <p class="switch">
+                        04
+                    </p>
+
                 </div>
         </section>
         <section class="container new">
@@ -123,58 +134,51 @@
             </div>
 
         </section>
-        <section class="container feedback">
-            <div class="feedback-slider">
-                <div class="feedback-slider__button feedback-slider__button-next"></div>
-                <div class="feedback-slider__container">
-                    <div class="feedback-slider__review"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
-                            height="80px" class="feedback-slider__avatar">
-                        <div class="feedback-slider__person"><span class="feedback-slider__name">Елена Новикова</span>
-                            <br>Студентка</br>
-                        </div>
-                        <blockquote class="feedback-slider__blockquote">«Хочу поделиться своими впечатлениями по
-                            использованию дивана «Бродвей», заказывала в
-                            конце 2021 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного
-                            магазина.»
-                        </blockquote>
+        <section class="container feedback-slider">
+            <div class="feedback-slider__button feedback-slider__button-next"></div>
+            <div class="feedback-slider__container">
+                <div class="feedback-slider__review review-one none is-active"><img src="css/img/main/avatar.png"
+                        alt="avatar" width="80px" height="80px" class="feedback-slider__avatar">
+                    <div class="feedback-slider__person"><span class="feedback-slider__name">Елена Новикова</span>
+                        <br>Студентка</br>
                     </div>
-                    <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar"
-                            width="80px" height="80px" class="feedback-slider__avatar">
-                        <div class="feedback-slider__person"><span class="feedback-slider__name">Елена Новикова</span>
-                            <br>Студентка</br>
-                        </div>
-                        <blockquote class="feedback-slider__blockquote">«Хочу поделиться своими впечатлениями по
-                            использованию дивана «Бродвей», заказывала в
-                            конце 2021 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного
-                            магазина.»
-                        </blockquote>
-                    </div>
-                    <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar"
-                            width="80px" height="80px" class="feedback-slider__avatar">
-                        <div class="feedback-slider__person"><span class="feedback-slider__name">Елена Новикова</span>
-                            <br>Студентка</br>
-                        </div>
-                        <blockquote class="feedback-slider__blockquote">«Хочу поделиться своими впечатлениями по
-                            использованию дивана «Бродвей», заказывала в
-                            конце 2021 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного
-                            магазина.»
-                        </blockquote>
-                    </div>
-                    <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar"
-                            width="80px" height="80px" class="feedback-slider__avatar">
-                        <div class="feedback-slider__person"><span class="feedback-slider__name">Елена Новикова</span>
-                            <br>Студентка</br>
-                        </div>
-                        <blockquote class="feedback-slider__blockquote">«Хочу поделиться своими впечатлениями по
-                            использованию дивана «Бродвей», заказывала в
-                            конце 2021 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного
-                            магазина.»
-                        </blockquote>
-                    </div>
+                    <blockquote class="feedback-slider__blockquote">«Хочу поделиться своими впечатлениями по
+                        использованию дивана «Бродвей», заказывала в
+                        конце 2021 года. Держится великолепно. Спасибо большое сотрудникам этого чудесного
+                        магазина.»
+                    </blockquote>
                 </div>
-                <div class="feedback-slider__button feedback-slider__button-prev"></div>
-                <div class="slider-pagination review__slider-pagination"></div>
+                <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
+                        height="80px" class="feedback-slider__avatar">
+                    <div class="feedback-slider__person"><span class="feedback-slider__name">Ольга Ригина</span>
+                        <br>Менеджер</br>
+                    </div>
+                    <blockquote class="feedback-slider__blockquote">«Замечательная мебель, пользуюсь с комфортом уже на
+                        протяжении года.»
+                    </blockquote>
+                    Новое
+                </div>
+                <div class="feedback-slider__review none"><img src="css/img/main/avatar.png" alt="avatar" width="80px"
+                        height="80px" class="feedback-slider__avatar">
+                    <div class="feedback-slider__person"><span class="feedback-slider__name">Александра Евстеева</span>
+                        <br>Дизайнер</br>
+                    </div>
+                    <blockquote class="feedback-slider__blockquote">«Долго выбирала, но в итоге останавила свой выбор»
+                        на "Callium". Отличное качество, профессиональные сотрудники!
+                    </blockquote>
+                </div>
+                <div class="feedback-slider__review review-last none"><img src="css/img/main/avatar.png" alt="avatar"
+                        width="80px" height="80px" class="feedback-slider__avatar">
+                    <div class="feedback-slider__person"><span class="feedback-slider__name">Ирина Зайцева</span>
+                        <br>Домохозяйка</br>
+                    </div>
+                    <blockquote class="feedback-slider__blockquote">«С "Callium" обустроили всю квартиру: и гостиную, и
+                        спальню. Ни разу не пожалели о выборе. Замечательный магазин с отличным ассортиментом, приятными
+                        ценами и вежливыми сотрудниками.»
+                    </blockquote>
+                </div>
             </div>
+            <div class="feedback-slider__button feedback-slider__button-prev"></div>
         </section>
         <section class="container sale">
             <h2 class="sale__title">Последний шанс<div></div>
@@ -227,8 +231,8 @@
                     <button class="container__product-buy">Купить</button>
                 </div>
             </div>
-            <div class="container sale-wrapper sofa">Диваны</div>
-            <div class="container sale-wrapper armchair">Кресла</div>
+            <!--             <div class="container sale-wrapper sofa none">Диваны</div>
+            <div class="container sale-wrapper armchair none">Кресла</div> -->
         </section>
     </main>
 
@@ -255,8 +259,7 @@
                 защищены.</p>
         </div>
     </footer>
-    <script src="/js/feedback.js"></script>
-    <script src="/js/last-chance.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

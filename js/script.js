@@ -5,49 +5,66 @@ let reviewOne = document.querySelector(".review-one");
 let reviewLast = document.querySelector(".review-last");
 let pagination = document.querySelectorAll(".switch");
 
-const clearClass = (elem) => {
-  elem.classList.remove("is-active");
-};
-
-const addClass = (elem) => {
-  elem.classList.add("is-active");
-};
-
-// Переключатель главного блока
-const switchMain = () => {
-  this.classList.add('slider__switch-open');
-};
-
-for (pag of pagination) {
-pag.addEventListener('click', switchMain)
+function clearClass(elem, itemClass) {
+  elem.classList.remove(itemClass);
+}
+function addClass(elem, itemClass) {
+  elem.classList.add(itemClass);
 }
 
-
-
 // Слайдер с отзывами
-/* const clickRewiev = () => {
+const clickRewiev = () => {
   let slideActiv = feedSlider.querySelector(".is-active");
   if (prevBtn) {
     let newActiv =
       feedSlider.querySelector(".is-active").previousElementSibling;
     if (newActiv == null) {
-      addClass(reviewLast);
-      clearClass(slideActiv);
+      addClass(reviewLast, "is-active");
+      clearClass(slideActiv, "is-active");
     } else {
-      addClass(newActiv);
-      clearClass(slideActiv);
+      addClass(newActiv, "is-active");
+      clearClass(slideActiv, "is-active");
     }
   } else {
     let newActiv = feedSlider.querySelector(".is-active").nextElementSibling;
     if (newActiv == null) {
-      addClass(reviewOne);
-      clearClass(slideActiv);
+      addClass(reviewOne, "is-active");
+      clearClass(slideActiv, "is-active");
     } else {
-      addClass(newActiv);
-      clearClass(slideActiv);
+      addClass(newActiv, "is-active");
+      clearClass(slideActiv, "is-active");
     }
   }
 };
 
 prevBtn.addEventListener("click", clickRewiev);
-nextBtn.addEventListener("click", clickRewiev); */
+nextBtn.addEventListener("click", clickRewiev);
+
+// Табы последний шанс
+
+const tab = function () {
+  let tabNav = document.querySelectorAll(".sale__tab-items");
+  let tabContent = document.querySelectorAll(".sale__tabs");
+  let tabName;
+
+  tabNav.forEach((item) => {
+    item.addEventListener("click", selectTabNav);
+  });
+
+  function selectTabNav() {
+    tabNav.forEach((item) => clearClass(item, "sale__tab-open"));
+    addClass(this, "sale__tab-open");
+    tabName = this.dataset.tabName;
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent(selectName) {
+    tabContent.forEach((item) => {
+      item.classList.contains(selectName)
+        ? addClass(item, "is-active")
+        : clearClass(item, "is-active");
+    });
+  }
+};
+
+tab();

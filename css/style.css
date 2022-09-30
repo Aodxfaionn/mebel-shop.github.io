@@ -60,6 +60,7 @@ a {
   display: none;
 }
 
+
 .is-active {
   display: block;
 }
@@ -101,13 +102,13 @@ a {
   margin-right: 22px;
 }
 
-.slider__product-all {
+.main__product-all {
   display: flex;
   flex-wrap: wrap;
   padding-top: 85px;
 }
 
-.slider__product-all::before {
+.main__product-all::before {
   content: "";
   position: absolute;
   height: 751px;
@@ -118,11 +119,11 @@ a {
   z-index: -1;
 }
 
-.slider__product {
+.main__product {
   color: #303032;
 }
 
-.slider__product-title {
+.main__product-title {
   position: absolute;
   width: 545px;
   height: 153px;
@@ -137,7 +138,7 @@ a {
   color: #303032;
 }
 
-.slider__product-name {
+.main__product-name {
   position: absolute;
   left: 135px;
   top: 433px;
@@ -146,7 +147,7 @@ a {
   line-height: 27px;
 }
 
-.slider__product-price-old {
+.main__product-price-old {
   position: absolute;
   left: 135px;
   top: 491px;
@@ -155,7 +156,7 @@ a {
   text-decoration: line-through;
 }
 
-.slider__product-price-new {
+.main__product-price-new {
   position: absolute;
   left: 203px;
   top: 481px;
@@ -164,7 +165,7 @@ a {
   line-height: 41px;
 }
 
-.slider__product-button {
+.main__product-button {
   position: absolute;
   width: 238px;
   height: 58px;
@@ -179,33 +180,12 @@ a {
   cursor: pointer;
 }
 
-.slider__product-image {
+.main__product-image {
   position: absolute;
   width: 532px;
   height: 751px;
   left: 701px;
   top: 0px;
-}
-
-.slider__switch {
-  position: absolute;
-width: 61px;
-height: 205px;
-left: 1245px;
-top: 311px;
-opacity: 0.4;
-font-size: 14px;
-}
-
-.slider__switch:hover {
-cursor: pointer;
-}
-
-.slider__switch-open {
-  text-decoration-line: underline;
-color: #000000;
-opacity: 1;
-font-size: 18px;
 }
 
 .new {
@@ -417,6 +397,7 @@ font-size: 18px;
   margin-bottom: 25px;
   color: rgba(0, 0, 0, 0.4);
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .sale__tab-open {
@@ -424,6 +405,7 @@ font-size: 18px;
   color: #000000;
   opacity: 1;
 }
+
 
 .sale-wrapper {
   display: flex;
@@ -439,9 +421,13 @@ font-size: 18px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
 }
 
-.border {
+.container__product:hover {
   border-top: #303032 5px solid;
   cursor: pointer;
+}
+
+.container__product:hover button {
+font-size: 18px;
 }
 
 .hidden-buy {

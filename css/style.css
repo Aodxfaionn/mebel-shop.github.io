@@ -64,17 +64,6 @@ a {
   display: block;
 }
 
-@media (max-width: 767px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .no-scroll {
-    overflow: hidden;
-  }
-}
-
 .page-header {
   display: flex;
   flex-wrap: wrap;

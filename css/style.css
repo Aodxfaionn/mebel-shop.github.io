@@ -47,6 +47,7 @@ body {
   margin: 0;
 }
 
+
 li {
   list-style: none;
 }
@@ -60,7 +61,6 @@ a {
   display: none;
 }
 
-
 .is-active {
   display: block;
 }
@@ -68,6 +68,12 @@ a {
 .page-header {
   display: flex;
   flex-wrap: wrap;
+}
+
+.page-header__wrapper {
+  display: flex;
+  padding-top: 85px;
+  position: relative;
 }
 
 .page-header__logo {
@@ -97,6 +103,12 @@ a {
   left: 1272px;
   top: 85px;
 }
+
+.site-nav__button {
+  display: none;
+}
+
+
 
 .page-header__user-item {
   margin-right: 22px;
@@ -406,7 +418,6 @@ a {
   opacity: 1;
 }
 
-
 .sale-wrapper {
   display: flex;
   column-gap: 31px;
@@ -427,7 +438,7 @@ a {
 }
 
 .container__product:hover button {
-font-size: 18px;
+  font-size: 18px;
 }
 
 .hidden-buy {

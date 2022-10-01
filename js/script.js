@@ -41,7 +41,6 @@ prevBtn.addEventListener("click", clickRewiev);
 nextBtn.addEventListener("click", clickRewiev);
 
 // Табы последний шанс
-
 const tab = function () {
   let tabNav = document.querySelectorAll(".sale__tab-items");
   let tabContent = document.querySelectorAll(".sale__tabs");

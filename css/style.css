@@ -206,7 +206,7 @@ a {
     display: none;
   }
   .main__product-image {
-    left: 640px;
+    left: 650px;
   }
 }
 
@@ -386,7 +386,7 @@ a {
 @media (max-width: 767px) {
   .feedback-slider {
     position: absolute;
-    left: -20%;
+    left: -10%;
     top: 0;
   }
 }
